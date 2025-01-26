@@ -1,50 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Data Engineer | Python | SQL | Big Data</p>
-    </div>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi! I'm a Data Engineer with a passion for solving problems and building data-driven solutions.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>E-commerce Data Analysis</h3>
-          <p>Analyzed purchasing trends using Power BI and Python.</p>
-          <a href="https://github.com/phyuhanthwe/ecommerce-analysis" target="_blank">View Project</a>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">Data<span>Engineer</span></a>
+            <ul class="nav__menu">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#education" class="nav__link">Education</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="nav__toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        <div class="project-card">
-          <h3>Sequence Analysis</h3>
-          <p>This is school project. The aim of this project is to provide a comprehensive understanding of regression analysis techniques and their application in predicting health-related outcomes.</p>
-          <a href="https://github.com/phyuhanthwe/data-analysis-with-python/tree/main/part08-e01_regression" target="_blank">View Project</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Junior Data Engineer</h1>
+                <p class="hero__subtitle">Passionate about transforming data into valuable insights</p>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn--secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="https://sjc.microlink.io/zJ7YFXg21DRK1spw3zIMLN2gZ9zse4MPrPwINYvmBaVCMrAoAaoL_k65AVTDeuflLaTCOfOAt3C59NE6mZowkQ.jpeg" alt="Data Visualization">
+            </div>
         </div>
-      </div>
+        <div class="hero__scroll">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="phyuhanthwe948@gmail.com">phyuhanthwe948@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/phyuhanthwe" target="_blank">View Profile</a></p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Highly motivated individual seeking a Bachelor Degree with a strong foundation in data engineering principles. I am eager to gain hands-on experience with modern data tools and technologies, and contribute to impactful data-driven projects</p>
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>BS in Computer Science</h3>
+                            <p>2023 - 2026</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-certificate"></i>
+                            <h3>AWS Certified</h3>
+                            <p>Cloud Practitioner</p>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-code-branch"></i>
+                            <h3>5+ Projects</h3>
+                            <p>Data Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Phyu Han Thwe. All Rights Reserved.</p>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <article class="project-card">
+                    <div class="project-card__image">
+                        <img src="https://sjc.microlink.io/zJ7YFXg21DRK1spw3zIMLN2gZ9zse4MPrPwINYvmBaVCMrAoAaoL_k65AVTDeuflLaTCOfOAt3C59NE6mZowkQ.jpeg" alt="ETL Pipeline">
+                    </div>
+                    <div class="project-card__content">
+                        <h3>Student Data ETL Pipeline</h3>
+                        <p>Built an ETL pipeline using Python and PostgreSQL to process and analyze student performance data.</p>
+                        <div class="project-card__tags">
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="btn btn--small"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="btn btn--small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- More project cards... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills__grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Engineering</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>ETL Pipelines</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Tools</h3>
+                    <ul>
+                        <li>GCP (Basic)</li>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Technologies</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>Pandas</li>
+                        <li>Apache Airflow</li>
+                        <li>Jupyter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section__title">Education & Certifications</h2>
+            <div class="education__grid">
+                <div class="education-card">
+                    <div class="education-card__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-card__content">
+                        <h3>Levle 5 Diploma in Computing</h3>
+                        <p>NCC Education</p>
+                        <p>2023 - 2025</p>
+                        <ul>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Database Management</li>
+                            <li>Big Data Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-card__icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="education-card__content">
+                        <h3>Big Data Platform</h3>
+                        <p>University of Helsinki</p>
+                        <p>2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section__title">Get in Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>phyuhantwe948.com</p>
+                    </div>
+                    <div class="contact__item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/phyuhanthwe</p>
+                    </div>
+                    <div class="contact__item">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>github.com/phyuhanthwe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Phyu Han Thwe - Junior Data Engineer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
